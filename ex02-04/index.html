@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="
+        fnProductReady(1,2000,function(pRet){
+            console.log(pRet);
+            fnProductReady(2,1000,function(pRet){
+                console.log(pRet);
+                fnProductReady(3,500,function(pRet){
+                    console.log(pRet);
+                    console.log('콜백 지옥 발생!');
+                })
+            })
+        })
+    ">콜백 함수 실행</button>
+
+    <script>
+        function fnProductReady(pNum, pTime, fnCallback) {
+            setTimeout(() => {
+                console.log(pNum);
+                fnCallback('상품이 성공적으로 배송되었습니다.');
+            }, pTime); // 타이머로 가상의 네트워크 지연상황 연출함
+        }
+    </script>
+</body>
+</html>
