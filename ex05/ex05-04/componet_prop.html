@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title></title>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+		<script>
+			Vue.component("favorite-fruits", {
+				props: ["fruit"],
+				template: "<li>{{ fruit.text }}</li>",
+			})
+		</script>
+	</head>
+	<body>
+		<div id="app">
+			<h1>좋아하는 과일!</h1>
+			<ol>
+				<favorite-fruits
+					v-for="item in aFruits"
+					v-bind:fruit="item"
+				></favorite-fruits>
+			</ol>
+		</div>
+		<script>
+			var app = new Vue({
+				el: "#app",
+				data: {
+					// 컴포넌트에 표시할 과일 데이터 정의
+					aFruits: [
+						{ id: 0, text: "사과" },
+						{ id: 1, text: "오렌지" },
+						{ id: 2, text: "수박" },
+					],
+				},
+			})
+		</script>
+	</body>
+</html>
