@@ -1,3 +1,3 @@
-const fnPlusNum = (num1,num2) => num1+num2;
+const fnPlusNum = (num1, num2) => num1 + num2
 
-export default fnPlusNum;
+export default fnPlusNum

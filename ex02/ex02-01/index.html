@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <button onclick="console.log(fnSayHello())" id="clickme">눌러 주세요!</button>
-	<br>
-	<button onclick="alert(fnPlusNumbers(3, 5))">3 + 5 = ?</button>
-	<button onclick="console.log(fnMinusNumbers(3, 5))">3 - 5 = ?</button>
-	<script>
-		function fnSayHello() {
-			document.querySelector('#clickme').innerHTML = '안녕하세요!';
-		}
-		function fnPlusNumbers(pNum1, pNum2) {
-			return pNum1 + pNum2;
-		}
-		const fnMinusNumbers = function (pNum1, pNum2) {
-			return pNum1 - pNum2;
-		}
-	</script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<button onclick="console.log(fnSayHello())" id="clickme">눌러 주세요!</button>
+		<br />
+		<button onclick="alert(fnPlusNumbers(3, 5))">3 + 5 = ?</button>
+		<button onclick="console.log(fnMinusNumbers(3, 5))">3 - 5 = ?</button>
+		<script>
+			function fnSayHello() {
+				document.querySelector('#clickme').innerHTML = '안녕하세요!'
+			}
+			function fnPlusNumbers(pNum1, pNum2) {
+				return pNum1 + pNum2
+			}
+			const fnMinusNumbers = function (pNum1, pNum2) {
+				return pNum1 - pNum2
+			}
+		</script>
+	</body>
 </html>
