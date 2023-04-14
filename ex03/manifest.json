@@ -1,0 +1,32 @@
+{
+	"name": "안녕하세요! PWA by JS",
+	"short_name": "PWA by JS",
+	"description": "PWA start program",
+	"scope": ".",
+	"start_url": "./",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"theme_color": "#ffffff",
+	"icons": [
+		{
+			"src": "images/icons/android-chrome-192x192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "images/icons/android-chrome-512x512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"shortcuts": [
+		{
+			"name": "새 창 PWA bj JS",
+			"short_name": "새 창",
+			"description": "새 창 PWA bj JS",
+			"url": "./",
+			"icons": [{ "src": "images/icons/android-chrome-192x192.png", "sizes": "192x192" }]
+		}
+	]
+}
