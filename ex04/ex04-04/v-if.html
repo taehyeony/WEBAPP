@@ -8,18 +8,16 @@
 		<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 	</head>
 	<body>
-		<div id="main">
-			<h1>좋아하는 과일은?</h1>
-			<ol>
-				<li v-for="item in aFruits">{{item.sFruitName}}</li>
-			</ol>
+		<div id="app">
+			<h1>{{bFlag}}</h1>
+			<p v-if="bFlag==true">앞면!</p>
+			<p v-else>뒷면!</p>
 		</div>
 		<script>
-			var main = new Vue({
-				el: '#main',
+			let app = new Vue({
+				el: '#app',
 				data: {
-					// 과일의 이름들을 가진 aFruits 배열을 데이터로 정의함
-					aFruits: [{ sFruitName: '사과' }, { sFruitName: '오렌지' }, { sFruitName: '포도' }],
+					bFlag: Math.random() > 0.5,
 				},
 			})
 		</script>

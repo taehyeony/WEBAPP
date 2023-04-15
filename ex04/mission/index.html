@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+	</head>
+	<body>
+		<div id="main">
+			<ul>
+				<li v-for="(item,index) in aPersons">
+					<p>번호 : {{index}}</p>
+					<p>이름 : {{item.name}}</p>
+					<p>나이 : {{item.age}}</p>
+				</li>
+			</ul>
+		</div>
+		<script>
+			let app = new Vue({
+				el: '#main',
+				data: {
+					aPersons: [
+						{
+							name: '홍길동',
+							age: 27,
+						},
+						{
+							name: '이순신',
+							age: 30,
+						},
+						{
+							name: '김유신',
+							age: 40,
+						},
+					],
+				},
+			})
+		</script>
+	</body>
+</html>
