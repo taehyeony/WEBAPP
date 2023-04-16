@@ -83,11 +83,11 @@
 			methods: {
 				// 카운터 증가는 동기실행을 가정하고 직접 store의 mutations에 접근하여 실행
 				fnIncCount() {
-					store.commit('fnIncData')
+					store.commit('fnIncData') //commit은 동기 작업을 mutations에 제출
 				},
 				//카운터 감소는 원격 서버 API로 비동기 실행을 가정하고 actions에 접근하여 실행
 				fnDecCount() {
-					store.dispatch('fnDecData')
+					store.dispatch('fnDecData') //dispatch는 비동기 작업을 포함하여 actions에 제출
 				},
 			},
 		})
