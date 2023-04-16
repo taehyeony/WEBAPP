@@ -45,7 +45,7 @@
 					// 가상으로 만든 원격 API 실행
 					const result = await api.fnDecrement()
 					// 원격 API가 성공할 경우에 비로소 fnDecData 함수 실행
-					if (result == true) commit("fnDecData")
+					if (result == true) commit('fnDecData')
 				},
 			},
 		})
@@ -63,9 +63,9 @@
 		}
 
 		// com-counter라는 신규 엘리먼트 등록
-		Vue.component("com-counter", {
+		Vue.component('com-counter', {
 			// 카운터 제목은 엘리먼트의 msg 속성값을 받아서 렌더링 함
-			props: ["msg"],
+			props: ['msg'],
 			template: `
         <div>
           <h2>{{ msg }}</h2>
@@ -83,17 +83,17 @@
 			methods: {
 				// 카운터 증가는 동기실행을 가정하고 직접 store의 mutations에 접근하여 실행
 				fnIncCount() {
-					store.commit("fnIncData")
+					store.commit('fnIncData')
 				},
 				//카운터 감소는 원격 서버 API로 비동기 실행을 가정하고 actions에 접근하여 실행
 				fnDecCount() {
-					store.dispatch("fnDecData")
+					store.dispatch('fnDecData')
 				},
 			},
 		})
 
 		var app = new Vue({
-			el: "#app",
+			el: '#app',
 			// store 사용을 선언함
 			store,
 		})
