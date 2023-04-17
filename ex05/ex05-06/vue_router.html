@@ -24,20 +24,20 @@
 		<script>
 			// 라우트에 컴포넌트를 정의
 			const tmMain = {
-				template: "<h2>메인 페이지입니다.</h2>",
+				template: '<h2>메인 페이지입니다.</h2>',
 			}
 			const tmSub = {
-				template: "<h2>서브 페이지입니다.</h2>",
+				template: '<h2>서브 페이지입니다.</h2>',
 			}
 
 			// 이동할 주소명과 사용할 컴포넌트를 등록하여 라우트를 정의
 			const rtRoutes = [
 				{
-					path: "/main",
+					path: '/main',
 					component: tmMain,
 				},
 				{
-					path: "/sub",
+					path: '/sub',
 					component: tmSub,
 				},
 			]
@@ -50,7 +50,7 @@
 
 			// 뷰 루트 인스턴스를 만들고 router 옵션 추가
 			var app = new Vue({
-				el: "#app",
+				el: '#app',
 				router,
 			})
 		</script>
