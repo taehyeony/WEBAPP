@@ -67,13 +67,13 @@
 			// 카운터 제목은 엘리먼트의 msg 속성값을 받아서 렌더링 함
 			props: ['msg'],
 			template: `
-        <div>
-          <h2>{{ msg }}</h2>
-          <p>카운터: {{ fnGetCount }}</p>
-          <button @click="fnIncCount">+1 증가</button>
-          <button @click="fnDecCount">-1 감소(원격 API 실행)</button>
-          <hr>
-        </div>`,
+		      <div>
+		        <h2>{{ msg }}</h2>
+		        <p>카운터: {{ fnGetCount }}</p>
+		        <button @click="fnIncCount">+1 증가</button>
+		        <button @click="fnDecCount">-1 감소(원격 API 실행)</button>
+		        <hr>
+		      </div>`,
 			computed: {
 				// 카운터 값은 store에서 getters에 접근하여 값을 가져온 후 렌더링함
 				fnGetCount() {
