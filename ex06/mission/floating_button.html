@@ -12,30 +12,30 @@
 	<body>
 		<div id="app">
 			<v-app>
-				<v-app-bar app color="primary">
-					<v-toolbar-title class="white--text mx-auto">Bettle 운동화</v-toolbar-title>
+				<v-app-bar app color="primary" dark>
+					<v-app-bar-nav-icon></v-app-bar-nav-icon>
+					<v-toolbar-title>Virtual University</v-toolbar-title>
 				</v-app-bar>
 				<v-main>
 					<v-container>
 						<v-row>
-							<v-col cols="12" sm="6">
-								<h2 class="mb-3">About Beetle</h2>
-								<p>
-									운동화는 나를 표현하는 하나의 방법이자 패션을 완성하는 필수 아이템이다. 운동화 대표 브랜드 Beetle은 편안한 발 패션으로 많은 사랑을 받고 있다.
-								</p>
-							</v-col>
-							<v-col cols="12" sm="6">
-								<h2 class="mb-3">Beetle's Target</h2>
-								<p>1.운동화에 관심있는 사람은 누구나</p>
-								<p>2.스니커즈를 사고 싶은 사람</p>
-								<p>3.차별화된 디자인을 원하는 사람</p>
-								<p>4.최신 트렌드의 운동화를 원하는 사람</p>
+							<v-col xs="12">
+								<v-card>
+									<v-card-text style="height: 300px" class="grey lighten-4"> </v-card-text>
+								</v-card>
 							</v-col>
 						</v-row>
 					</v-container>
 				</v-main>
-				<v-footer color="primary" dark>
-					<div class="mx-auto">Copyright &copy{{new Date().getFullYear()}}</div>
+				<v-card>
+					<v-card-text style="height: 50px; position: relative">
+						<v-btn absolute dark fab top right color="pink">
+							<v-icon>add</v-icon>
+						</v-btn>
+					</v-card-text>
+				</v-card>
+				<v-footer dark color="primary" class="">
+					<div class="mx-auto">Copyright &copy</div>
 				</v-footer>
 			</v-app>
 		</div>
