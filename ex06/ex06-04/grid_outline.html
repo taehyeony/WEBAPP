@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet" />
+		<link href="https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css" rel="stylesheet" />
+		<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet" />
+		<title>Document</title>
+		<style>
+			.border_style {
+				border-color: rgb(5, 121, 30);
+				border-width: 1px;
+				border-style: solid;
+				background-color: rgb(153, 204, 14);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			<v-app>
+				<v-main>
+					<v-container>
+						<v-row class="text-center">
+							<v-col cols="12" class="border_style">xs12</v-col>
+							<v-col cols="6" class="border_style">xs6</v-col>
+							<v-col cols="3" class="border_style">xs3</v-col>
+							<v-col cols="4" class="border_style">xs4</v-col>
+							<v-col cols="1" v-for="item in 12" v-bind:key="item.id" class="border_style">xs1</v-col>
+						</v-row>
+						<br />
+						<v-row class="text-center">
+							<v-col cols="1" v-for="item in 20" v-bind:key="item.id" class="border_style">xs4</v-col>
+						</v-row>
+					</v-container>
+					<v-container fluid>
+						<v-row class="text-center">
+							<v-col sm="4" class="border_style">sm4</v-col>
+							<v-col sm="4" offset-sm="4" class="border_style">4</v-col>
+						</v-row>
+					</v-container>
+				</v-main>
+			</v-app>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+		<script>
+			new Vue({
+				el: '#app',
+				vuetify: new Vuetify(),
+			})
+		</script>
+	</body>
+</html>

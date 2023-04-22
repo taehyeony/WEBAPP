@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet" />
+		<link href="https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css" rel="stylesheet" />
+		<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div id="app">
+			<v-app>
+				<v-main>
+					<v-container>
+						<v-card max-width="400">
+							<!-- <v-img scr="https://picsum.photos/id/1068/400/300" aspect-ratio="2.3"></v-img> -->
+							<v-img src="https://picsum.photos/id/1068/400/300" aspect-ratio="2.3"></v-img>
+							<v-card-text>
+								<div>
+									<h2 class="title primary--text mb-2">시대정신 선도</h2>
+									버추얼 컴퍼니에 관심을 가져 주셔서 감사합니다. 버추얼 컴퍼니는 오랜 역사를 지니며 그동안 많은 발전을 하였습니다.
+								</div>
+							</v-card-text>
+							<v-card-actions>
+								<v-btn color="red white--text">확인</v-btn>
+								<v-btn outlined color="red">취소</v-btn>
+								<v-btn color="#9C27B0" dark>취소</v-btn>
+							</v-card-actions>
+						</v-card>
+					</v-container>
+				</v-main>
+			</v-app>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+		<script>
+			new Vue({
+				el: '#app',
+				vuetify: new Vuetify(),
+			})
+		</script>
+	</body>
+</html>

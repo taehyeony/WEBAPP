@@ -24,11 +24,13 @@
 				data: function () {
 					return { nCounter: parseInt(this.startnumber) }
 				},
+				//머스태시 값을 변경하거나 연산이 복잡할 때 주로 사용
 				computed: {
 					fnGetCounter: function () {
 						return this.nCounter
 					},
 				},
+				//이벤트 핸들러를 처리할 때 주로 사용
 				methods: {
 					fnIncCounter: function () {
 						this.nCounter++
